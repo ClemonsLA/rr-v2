@@ -59,9 +59,7 @@ export default async function PromptCreate(finDataArray){
         }
 
     }
-
-
-
+//Prompt structure
     stringArrayData.forEach((val) => console.log(val));
 
     const fullyQualifiedPropmt = `Cold wax oil painting of a ${stringArrayData[0]}, wearing (or holding) a ${stringArrayData[1]}. The main color is: ${stringArrayData[2]}`;
@@ -69,20 +67,20 @@ export default async function PromptCreate(finDataArray){
     console.log(fullyQualifiedPropmt);
 //FUCK IT import the whole goddamn thing from here
 
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
-});
-const response =  await openai.images.generate({
-    model: "dall-e-3",
-    prompt: fullyQualifiedPropmt,
-    n: 1,
-    size: "1024x1792",
-    quality: "hd",
-    style: "vivid",
-});
-const image_url = response.data[0].url;
+        const openai = new OpenAI({
+            apiKey: process.env.OPENAI_API_KEY,
+        });
+        const response =  await openai.images.generate({
+            model: "dall-e-3",
+            prompt: fullyQualifiedPropmt,
+            n: 1,
+            size: "1024x1792",
+            quality: "hd",
+            style: "vivid",
+        });
+        const image_url = response.data[0].url;
 
-console.log(image_url);   
+        console.log(image_url);   
 //to here 
 
     return image_url;
