@@ -65,6 +65,8 @@ export default async function PromptCreate(finDataArray){
     const fullyQualifiedPropmt = `Cold wax oil painting of a ${stringArrayData[0]}, wearing (or holding) a ${stringArrayData[1]}. The main color is: ${stringArrayData[2]}`;
 
     console.log(fullyQualifiedPropmt);
+
+//end prompt structure
 //FUCK IT import the whole goddamn thing from here
 
         const openai = new OpenAI({
