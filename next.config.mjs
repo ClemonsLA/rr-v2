@@ -4,6 +4,7 @@ const nextConfig = {
         serverActions: {
           allowedOrigins: [
             'localhost:3000',
+            'rr-v2.vercel.app',
             'solid-space-telegram-4j7xw57jjj7hqwv-3000.app.github.dev',
           ]
         }
