@@ -7,6 +7,8 @@ const nextConfig = {
             'rr-v2.vercel.app',
             'https://rr-v2.vercel.app',
             'https://rr-v2.vercel.app/create/cybercatInterview',
+            '72.20.140.35',
+            'https://72.20.140.35',
             'solid-space-telegram-4j7xw57jjj7hqwv-3000.app.github.dev',
           ]
         }
