@@ -1,6 +1,4 @@
 'use client'
-import {useState} from "react"
-import DisplayDivComp from "@/app/formComponents/DisplayDivComp"
 
 export function CybercatQ(){
 
