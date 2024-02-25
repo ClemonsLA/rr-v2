@@ -63,12 +63,12 @@ export default async function PromptCreate(finDataArray){
                 break;
             }
             case "secret": {
-                const secretString = "gold chain necklace"
+                const secretString = "silver chain necklace"
                 stringArrayItems.push(secretString);
                 break;
             }
             case "TS": {
-                const TsString = "glowing blue chain necklace"
+                const TsString = "gold chain necklace"
                 stringArrayItems.push(TsString);
                 break;
             }
@@ -108,7 +108,7 @@ export default async function PromptCreate(finDataArray){
             model: "dall-e-3",
             prompt: goldenPrompt,
             n: 1,
-            size: "1024x1792",
+            size: "1024x1024",
             quality: "hd",
             style: "vivid",
         });

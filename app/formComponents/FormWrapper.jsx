@@ -13,7 +13,7 @@ export function FormWrapper({children}){
     }
 
     return(
-    <div className="grid grid-cols-2 justify-center content-center h-full w-full">
+    <div className="grid grid-cols-2 justify-center content-center items-center h-full w-full">
         
         <form action={getDalleShit} className="grid justify-center content-center ">
             <div className="backdrop-blur bg-white/5 grid h-[80vh] rounded-lg shadow sm:p-8 dark:border-gray-700 divide-y divide-gray-200 dark:divide-gray-700">
@@ -32,7 +32,7 @@ export function FormWrapper({children}){
             </div>
         </form>
 
-                <div className='h-[80vh]'>Dalle Pic
+                <div className='grid w-[80%] h-[80vh] justify-self-center content-center'>
                     <Image
                         src={gURL}
                         width={500}
